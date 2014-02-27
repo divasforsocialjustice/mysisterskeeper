@@ -4,63 +4,77 @@
 	<title>Page Title</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
     <link rel="stylesheet" href="css/imaging.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
 </head>
 
 <body>
 	
 <!-- Start of first page -->
-<div data-role="page" id="imaging">
+<div data-role="page" id="questions">
 
 	<div data-role="header"  data-position="fixed">
-		<h1>Imaging</h1>
+		<h1>My Sister's Keeper</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
-		<a href="#imaging-hair" data-transition="slide">
-        <img src="images/animated_figure_iphone4.gif" />
-        </a>
+        <div>Welcome to My Sister's Keeper. The mobile app that helps young girls of color hear positive answers to the questions they have.<br><br>Click on a category below to get started!</div>
+        <a href="#questions-hair" class="ui-btn ui-shadow" data-transition="flip">Hair</a>
+        <a href="#questions-hair" class="ui-btn ui-shadow" data-transition="slide">Self</a>
+        <a href="#questions-hair" class="ui-btn ui-shadow" data-transition="slide">Relationships</a>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-id="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>
-                <li><a href="#">Imaging</a></li>
+                <li><a href="#questions" class="ui-btn-active">Questions</a></li>
+                <li><a href="#">BFFs</a></li>
                 <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Ask</a></li>
             </ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
 </div><!-- /page -->
 
+    
+    
+    
 <!-- Start of second page -->
-<div data-role="page" id="imaging-hair" page-title="Imaging Ourselves- Hair" data-add-back-btn="true" data-back-btn-text="Imaging">
+<div data-role="page" id="questions-hair" page-title="My Sister's Keeper - Hair" data-add-back-btn="true" data-back-btn-text="questions">
 
 	<div data-role="header" data-position="fixed">
+        <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-icon-arrow-l ui-btn-icon-left" data-rel="back">Questions</a>
 		<h1>Hair</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
-		<a href="#foo" data-rel="back">
-        <img src="images/image_hair_cropped_iPhone4.png" align="left" />
-        </a>
-        <h2>Hair</h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis libero vel urna imperdiet, sit amet rutrum nisl consectetur.
-        <h3>Questions</h3>
-        <ul>
-        	<li>What makes good hair?
-            <iframe width="140" height="78" src="//www.youtube.com/embed/RKgtDwb8T8A" frameborder="0" allowfullscreen></iframe>
-            </li>
-        </ul>
+		<div>Hear what young girls ask about their <b>hair</b>.</div>
+        <h2>Questions about Hair</h2>
+            <H3>When can I dye my hair ?</H3>
+            Answers from:
+                <h4>Afia</h4>
+                <iframe width="140" height="78" src="http://www.youtube.com/embed/RKgtDwb8T8A" frameborder="0" allowfullscreen></iframe>
+                <h4>Kady</h4>
+                <iframe width="140" height="78" src="http://www.youtube.com/embed/RKgtDwb8T8A" frameborder="0" allowfullscreen></iframe>  
+        
+            <h3>How do I get healthy hair?</h3>
+            Answers from:
+                <h4>Afia</h4>
+                <iframe width="140" height="78" src="http://www.youtube.com/embed/RKgtDwb8T8A" frameborder="0" allowfullscreen></iframe>  
+        
 	</div><!-- /content -->
 
 	<div data-role="footer" data-id="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>
-                <li><a href="#">Imaging</a></li>
+                <li><a href="#questions" class="ui-btn-active">Questions</a></li>
+                <li><a href="#">BFFs</a></li>
                 <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Ask</a></li>
             </ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
