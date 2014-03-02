@@ -5,36 +5,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
-    <link rel="stylesheet" href="css/imaging.css" />
+    <link rel="stylesheet" href="css/mysisterskeeper.css" />
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
     <script type="text/javascript" src="phonegap.js"></script>
 </head>
 
-<body>
-	
+<body>    
+    
 <!-- Start of page -->
-<div data-role="page">
+<div data-role="page" class="questionsTopic" id="askq" page-title="My Sister's Keeper - Ask a Question">
 
-	<div data-role="header"  data-position="fixed">
-		<h1>My Sister's Keeper</h1>
+	<div data-role="header" data-position="fixed">
+		<h1>Ask a Question</h1>
 	</div><!-- /header -->
 
-	<div role="main" class="ui-content">
-        <div>Welcome to My Sister's Keeper. The mobile app that helps young girls of color hear positive answers to the questions they have.<br><br>Click on a category below to get started!</div>
-        <a href="questions_hair.html" class="ui-btn ui-shadow" data-transition="flip">Hair</a>
-        <a href="questions_hair.html" class="ui-btn ui-shadow" data-transition="slide">Self</a>
-        <a href="questions_hair.html" class="ui-btn ui-shadow" data-transition="slide">Relationships</a>
+	<div data-role="content">
+		<div>Don't see a question in the App? Submit it here and we'll work on getting it answered.</div>
+        <table>
+            <tr><td>Your name</td><td><input type="text"></td></tr>
+            <tr><td>Your e-mail</td><td><input type="text"></td></tr>
+            <tr><td>Your Question</td><td><textarea></textarea></td></tr>
+            <tr><td></td><td>Submit</td></tr>            
+        </table>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-id="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>
-                <li><a href="index.html" class="ui-btn-active">Questions</a></li>
+                <li><a href="index.html">Questions</a></li>
                 <li><a href="bffs.html">BFFs</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="askq.html">Ask</a></li>
+                <li><a href="askq.html" class="ui-btn-active">Ask</a></li>
             </ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
