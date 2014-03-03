@@ -13,3 +13,17 @@
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+
+#sendQuestionResults {
+    display: none;
+}
+
+.questionsTopic .ui-block-a, .bff .ui-block-a {
+    text-align: right;
+    padding-right: 10px;
+}
+    
+.questionsTopic .ui-block-a h4, .bff .ui-block-a h4  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

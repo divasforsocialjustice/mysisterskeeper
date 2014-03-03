@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html>
 <head>
-	<title>Page Title</title>
+	<title>My Sister's Keeper - Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
@@ -14,27 +14,27 @@
 <body>
 	
 <!-- Start of page -->
-<div data-role="page">
-
+<div data-role="page" class="home" id="home" page-title="My Sister's Keeper - Home">
+    
 	<div data-role="header"  data-position="fixed">
-		<h1>My Sister's Keeper</h1>
+		<h1>Home</h1>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-        <div>Welcome to My Sister's Keeper. The mobile app that helps young girls of color hear positive answers to the questions they have.<br><br>Click on a category below to get started!</div>
-        <a href="questions_hair.html" class="ui-btn ui-shadow" data-transition="flip">Hair</a>
-        <a href="questions_hair.html" class="ui-btn ui-shadow" data-transition="slide">Self</a>
-        <a href="questions_hair.html" class="ui-btn ui-shadow" data-transition="slide">Relationships</a>
+        <div>Welcome to <b>My Sister's Keeper</b> Mobile App. The app that helps young girls of color hear positive answers to the questions they have.<br><br>Click on a category below to get started!</div>
+        <a href="questions_hair.html" class="ui-btn ui-shadow">Hair</a>
+        <a href="questions_hair.html" class="ui-btn ui-shadow">Self</a>
+        <a href="questions_hair.html" class="ui-btn ui-shadow">Relationships</a>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-id="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>
-                <li><a href="index.html" class="ui-btn-active">Questions</a></li>
-                <li><a href="bffs.html">BFFs</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="askq.html">Ask</a></li>
+                <li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
+                <li><a href="bffs.html" data-icon="user">BFFs</a></li>
+                <li><a href="about.html" data-icon="info">About</a></li>
+                <li><a href="gallery.html" data-icon="camera">Gallery</a></li>
+                <li><a href="askq.html" data-icon="comment">Ask</a></li>
             </ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->

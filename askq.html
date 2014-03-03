@@ -9,6 +9,23 @@
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
     <script type="text/javascript" src="phonegap.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#sendQuestion").click(function(){
+                //$( "#sendQuestionResult" ).popup( "open", { x: 0, y: 0 } );
+                $.mobile.loading( "show", {
+                    text: "",
+                    textVisible: true,
+                    textonly: false,
+                    theme: "b",
+                    html: "<h3>Sent!</h3><p>Thanks for your question! We'll let you know when we add it to the app.</p>"
+                });
+                setTimeout(function(){ $.mobile.loading( "hide" ); }, 5000);
+            });
+        });
+    </script>
+    
+    
 </head>
 
 <body>    
@@ -26,18 +43,21 @@
             <tr><td>Your name</td><td><input type="text"></td></tr>
             <tr><td>Your e-mail</td><td><input type="text"></td></tr>
             <tr><td>Your Question</td><td><textarea></textarea></td></tr>
-            <tr><td></td><td>Submit</td></tr>            
+            <tr><td></td><td align="right"><button class="ui-btn ui-btn-inline" id="sendQuestion">Send Question</button></td></tr>            
         </table>
+        <div data-role="popup" id="sendQuestionResult" data-arrow="t,r" data-position-to="#sendQuestion">
+<p><h3>Sent!</h3><p>Thanks for your question! We'll let you know when we add it to the app.</p>
+</div>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-id="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>
-                <li><a href="index.html">Questions</a></li>
-                <li><a href="bffs.html">BFFs</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="askq.html" class="ui-btn-active">Ask</a></li>
+                <li><a href="index.html" data-icon="home">Home</a></li>
+                <li><a href="bffs.html" data-icon="user">BFFs</a></li>
+                <li><a href="about.html" data-icon="info">About</a></li>
+                <li><a href="gallery.html" data-icon="camera">Gallery</a></li>
+                <li><a href="askq.html" data-icon="comment" class="ui-btn-active">Ask</a></li>
             </ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
