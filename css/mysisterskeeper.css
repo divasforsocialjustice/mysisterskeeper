@@ -27,3 +27,11 @@
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.seeAll {
+    font-size: 75%;
+}
+
+.questionsTopic .ui-grid-a {
+    padding-bottom: 10px;
+}

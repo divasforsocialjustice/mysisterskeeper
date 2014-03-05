@@ -9,22 +9,7 @@
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
     <script type="text/javascript" src="phonegap.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#sendQuestion").click(function(){
-                //$( "#sendQuestionResult" ).popup( "open", { x: 0, y: 0 } );
-                $.mobile.loading( "show", {
-                    text: "",
-                    textVisible: true,
-                    textonly: false,
-                    theme: "b",
-                    html: "<h3>Sent!</h3><p>Thanks for your question! We'll let you know when we add it to the app.</p>"
-                });
-                setTimeout(function(){ $.mobile.loading( "hide" ); }, 5000);
-            });
-        });
-    </script>
-    
+
     
 </head>
 
@@ -32,7 +17,7 @@
     
 <!-- Start of page -->
 <div data-role="page" class="questionsTopic" id="askq" page-title="My Sister's Keeper - Ask a Question">
-
+    
 	<div data-role="header" data-position="fixed">
 		<h1>Ask a Question</h1>
 	</div><!-- /header -->
