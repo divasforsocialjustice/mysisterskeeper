@@ -1,7 +1,7 @@
 /* CSS Document */
-#imaging .ui-content {
+/*#imaging .ui-content {
 	padding: 0px;
-}
+}*/
 
 #imaging-hair h3 {
 	clear:both;
@@ -18,7 +18,7 @@
     display: none;
 }
 
-.questionsTopic .ui-block-a, .bff .ui-block-a {
+/*.questionsTopic .ui-block-a, .bff .ui-block-a {
     text-align: right;
     padding-right: 10px;
 }
@@ -34,4 +34,4 @@
 
 .questionsTopic .ui-grid-a {
     padding-bottom: 10px;
-}
+}*/
