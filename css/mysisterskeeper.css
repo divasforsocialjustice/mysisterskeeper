@@ -18,7 +18,7 @@
     display: none;
 }
 
-/*.questionsTopic .ui-block-a, .bff .ui-block-a {
+.questionsTopic .ui-block-a, .bff .ui-block-a {
     text-align: right;
     padding-right: 10px;
 }
@@ -32,9 +32,9 @@
     font-size: 75%;
 }
 
-.questionsTopic .ui-grid-a {
+.questionsTopic .ui-grid-a, .bff .ui-grid-a {
     padding-bottom: 10px;
-}*/
+}
 
 /* DIVA Color Scheme */
 .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {

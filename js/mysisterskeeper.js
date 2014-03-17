@@ -33,3 +33,7 @@ $( document ).on( "pageshow", "[data-role='page']", function() {
         }
     });
 });
+
+$(document).on('mobileinit', function () {
+    $.mobile.pushStateEnabled = false;
+});
