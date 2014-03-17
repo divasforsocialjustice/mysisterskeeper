@@ -37,3 +37,13 @@ $( document ).on( "pageshow", "[data-role='page']", function() {
 $(document).on('mobileinit', function () {
     $.mobile.pushStateEnabled = false;
 });
+
+
+/* The splash screen auto-hide is disabled, allow a couple more seconds so you can see it */
+document.addEventListener("deviceready", function(e) {
+	window.setTimeout(function() {
+		navigator.splashscreen.hide();
+	},2000);
+			
+}, "false");
+
