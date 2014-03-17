@@ -23,6 +23,10 @@ Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this A
     <gap:platform name="android" />
     
     <preference name="target-device" value="handset" />
+        
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+        
 
     <icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
     <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
