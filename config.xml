@@ -2,7 +2,7 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "org.divasforsocialjustice.mysisterskeeper"
-        versionCode = "10" 
+        versionCode = "1" 
         version     = "1.0.0" >
 
     <!-- versionCode is optional and Android only -->
@@ -10,9 +10,9 @@
     <name>My Sister's Keeper</name>
 
     <description>
-        The My Sister’s Keeper Mobile App provides a platform for a global community of women and girls of color to receive loving affirmations about the questions young girls of color ask themselves growing up. Not everyone has a positive maternal confidant to help answer their questions and DIVAS helps fill that void with this free mobile app that lets a young girl ask a question about body image, relationships or just know someone loves them.
+The My Sister’s Keeper Mobile App provides a platform for a global community of women and girls of color to receive loving affirmations about the questions young girls of color ask themselves growing up. Not everyone has a positive maternal confidant to help answer their questions and DIVAS helps fill that void with this free mobile app that lets a young girl ask a question about body image, relationships or just know someone loves them.
         
-        Young girls in Beford Stuyvesant, Brooklyn, filmed all of the content in this App and helped to edit, design and program the Mobile App.
+Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this App and helped to edit, design and program the Mobile App.
     </description>
 
     <author href="https://www.divasforsocialjustice.org" email="mysisterskeeper@divasforsocialjustice.com">
@@ -28,9 +28,19 @@
     <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
     <icon src="icons/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
     <icon src="icons/ios/icon-72_at_2x.png" gap:platform="ios" width="144" height="144" />
-        
+    
+    <icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
     <icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
     <icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
     <icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
-    
+
+    <gap:splash src="splash/ios/Default.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="splash/ios/Default_at_2x.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="splash/ios/Default_iphone5.png" gap:platform="ios" width="640" height="1136" />
+    <gap:splash src="splash/ios/Default-Landscape.png" gap:platform="ios" width="1024" height="748" />
+    <gap:splash src="splash/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1004" />
+    <gap:splash src="splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />
+            
+        
 </widget>
