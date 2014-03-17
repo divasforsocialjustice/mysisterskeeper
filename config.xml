@@ -34,8 +34,14 @@ Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this A
     <icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
     <icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 
-    <preference name="auto-hide-splash-screen" value="false" />
-        
+    <!-- Disable Auto-Hide so we can leave the splash screen up a few seconds -->
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <!-- Do not auto hide splash on iOS -->
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="auto-hide-splash-screen" value="false" />    
+    <!-- Do not auto hide splash on Android -->
+    <preference name="SplashScreenDelay" value="10000"/>
+    
     <gap:splash src="splash/ios/Default.png" gap:platform="ios" width="320" height="480" />
     <gap:splash src="splash/ios/Default_at_2x.png" gap:platform="ios" width="640" height="960" />
     <gap:splash src="splash/ios/Default_iphone5.png" gap:platform="ios" width="640" height="1136" />
