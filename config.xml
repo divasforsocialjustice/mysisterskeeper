@@ -22,7 +22,7 @@ Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this A
     <gap:platform name="ios" />
     <gap:platform name="android" />
     
-    <preference name="target-device" value="universal" />
+    <preference name="target-device" value="handset" />
        
     <!-- To fix an issue in iOS where YouTube video doesn't play audio if the Device mute button is on -->
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
