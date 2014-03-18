@@ -1,39 +1,44 @@
 /* CSS Document */
-/*#imaging .ui-content {
-	padding: 0px;
-}*/
 
-#imaging-hair h3 {
-	clear:both;
-	padding-top: 5px;
-}
-
-#imaging-hair h2 {
-	padding-left: 5px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
 
 #sendQuestionResults {
     display: none;
+}
+
+.ui-content {
+    font-size: 0.85em;
+    line-height: 1.3;
+}
+
+.questionsTopic h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .questionsTopic .ui-block-a, .bff .ui-block-a {
     text-align: right;
     padding-right: 10px;
 }
-    
+
+.questionsTopic h3, .bff h3 {
+    margin-bottom: 5px;
+}
+
 .questionsTopic .ui-block-a h4, .bff .ui-block-a h4  {
     margin-top: 0px;
     margin-bottom: 0px;
+    line-height: 1.0;    
 }
 
 .seeAll {
     font-size: 75%;
+    line-height: 1.0;
 }
 
 .questionsTopic .ui-grid-a, .bff .ui-grid-a {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #EEEEEE;
 }
 
 /* DIVA Color Scheme */
