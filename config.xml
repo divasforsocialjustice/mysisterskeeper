@@ -26,8 +26,15 @@ Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this A
        
     <!-- To fix an issue in iOS where YouTube video doesn't play audio if the Device mute button is on -->
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
-    <preference name="AllowInlineMediaPlayback" value="true" />
-        
+    
+    <preference name="OpenAllWhitelistURLsInWebView" value="true" />
+    
+    <access origin="http://youtube.com" subdomains="true" />
+    <access origin="https://youtube.com" subdomains="true" />
+
+    <access origin="http://ytimg.com" subdomains="true" />
+    <access origin="https://ytimg.com" subdomains="true" />
+    
 
     <icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
     <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
@@ -41,10 +48,10 @@ Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this A
 
     <!-- Disable Auto-Hide so we can leave the splash screen up a few seconds -->
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    <!-- Do not auto hide splash on iOS -->
+    <!-- Disable auto hide splash on iOS -->
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="auto-hide-splash-screen" value="false" />    
-    <!-- Do not auto hide splash on Android -->
+    <!-- Disabling auto hide splash screen on Android doesn't work, so set it to a long duration -->
     <preference name="SplashScreenDelay" value="10000"/>
     
     <gap:splash src="splash/ios/Default.png" gap:platform="ios" width="320" height="480" />
@@ -54,6 +61,10 @@ Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this A
     <gap:splash src="splash/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
     <gap:splash src="splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1536" />
     <gap:splash src="splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2048" />
-            
         
+    <gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" /> <!-- at least 426 x 320 -->
+    <gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" /> <!-- at least 470 x 320 -->
+    <gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" /> <!-- at least 640 x 480 -->
+    <gap:splash src="splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" /> <!-- at least 960 x 720 -->
+            
 </widget>
