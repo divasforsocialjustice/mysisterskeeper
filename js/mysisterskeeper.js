@@ -11,6 +11,10 @@ $(document).on("pagecreate", "#askq",  function(event){
     });
 });
 
+$(document).on("pagecreate", "#gallery",  function(event){
+    alert("here");
+});
+
 $(function(){
 	$( "[data-role='footer']" ).toolbar({ theme: "a" });
 });
@@ -22,8 +26,6 @@ $( document ).on( "pageshow", "[data-role='page']", function() {
     // which value is equal to the text of the nav button
     // For example, on first page: <div data-role="page" data-title="Home">
     var current = $( this ).jqmData( "title" );
-    // Change the heading
-    $( "[data-role='header'] h1" ).text( current );
     // Remove active class from nav buttons
     $( "[data-role='navbar'] a.ui-btn-active" ).removeClass( "ui-btn-active" );
     // Add active class to current nav button
@@ -39,7 +41,7 @@ $(document).on('mobileinit', function () {
 });
 
 
-/* The splash screen auto-hide is disabled, allow a couple more seconds so you can see it */
+/* The splash screen auto-hide is disabled, so we give it a couple of seconds before hiding it */
 document.addEventListener("deviceready", function(e) {
 	window.setTimeout(function() {
 		navigator.splashscreen.hide();
