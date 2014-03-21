@@ -12,7 +12,7 @@ $(document).on("pagecreate", "#askq",  function(event){
 });
 
 $(document).on("pagecreate", "#gallery",  function(event){
-    $("#Gallery a").photoSwipe();
+    $( '.swipebox' ).swipebox();
 });
 
 $(function(){
