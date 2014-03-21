@@ -19,7 +19,6 @@ $(function(){
 	$( "[data-role='footer']" ).toolbar({ theme: "a" });
 });
 
-
 // Update the contents of the toolbars
 $( document ).on( "pageshow", "[data-role='page']", function() {
     // Each of thepages has a data-title attribute
