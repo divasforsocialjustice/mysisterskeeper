@@ -1,13 +1,53 @@
 /* CSS Document */
 
-.homeLogo {
+/* Styles for the Home Page */
+.home .homeLogo {
     float: left;
     margin-right: 10px;
     margin-bottom: 20px;
+    max-width: 300px;
 }
 
 .clearFloat {
     clear: both
+}
+
+/* Styles for the About Page */
+.about li {
+    list-style-type: none;
+    margin-bottom: 0.5em;
+}
+
+.about h3 {
+    margin-top: 2em;
+    margin-bottom: 0px;
+}
+
+.about h4 {
+    margin-top: 0px;
+}
+
+.about .name {
+    display: block;
+    font-weight: bold;
+}
+
+.about .title {
+    display: block;
+    font-size: 0.9em;
+}
+
+.about .age {
+    display: block;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.about .DIVASlogo {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    max-width:200px;
 }
 
 
