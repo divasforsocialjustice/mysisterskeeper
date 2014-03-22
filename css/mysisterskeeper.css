@@ -1,5 +1,15 @@
 /* CSS Document */
 
+.homeLogo {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.clearFloat {
+    clear: both
+}
+
 
 #sendQuestionResults {
     display: none;
