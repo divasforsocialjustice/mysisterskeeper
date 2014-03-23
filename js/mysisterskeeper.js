@@ -1,6 +1,13 @@
 $(document).on("pagecreate", "#askq",  function(event){
-    $("#sendQuestion").click(function(){
-
+    
+    $('#formAskQ').submit(function (e) {
+    
+        //cache the form element for use in this function
+        var $this = $(this);
+    
+        //prevent the default submission of the form
+        e.preventDefault();
+    
         $.mobile.loading( "show", {
             text: "",
             textVisible: true,
@@ -8,11 +15,12 @@ $(document).on("pagecreate", "#askq",  function(event){
             theme: "b",
             html: "<h3>Sending...</h3><p>Sending your question...</p>"
         });        
-        
+        var formPost;
+        formPost = $this.serialize();
         $.ajax({
             type: "POST",
             url: "http://imaging.murraycox.com/ajax/sendquestion.php",
-            data: $("#formAskQ").serialize(),
+            data: formPost,
             dataType: "json",
 
             success: function(data){
