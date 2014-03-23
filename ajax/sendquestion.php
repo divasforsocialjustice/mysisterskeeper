@@ -12,7 +12,7 @@
     $response_array['message'] = 'Email sent!';
 
 
-    php header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Origin: *');
     echo json_encode($response_array);
 
 ?>
