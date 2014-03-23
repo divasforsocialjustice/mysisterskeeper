@@ -1,13 +1,43 @@
 $(document).on("pagecreate", "#askq",  function(event){
     $("#sendQuestion").click(function(){
+
         $.mobile.loading( "show", {
             text: "",
             textVisible: true,
             textonly: false,
             theme: "b",
-            html: "<h3>Sent!</h3><p>Thanks for your question! We'll let you know when we add it to the app.</p>"
+            html: "<h3>Sending...</h3><p>Sending your question...</p>"
+        });        
+        
+        $.ajax({
+            type: "POST",
+            url: "http://imaging.murraycox.com/ajax/sendquestion.php",
+            data: $("#myForm").serialize(),
+            dataType: "json",
+
+            success: function(data){
+                //if(data.status === 'success'){$("#myForm table").hide();}
+                //Check status of the return?
+                $.mobile.loading( "show", {
+                    text: "",
+                    textVisible: true,
+                    textonly: false,
+                    theme: "b",
+                    html: "<h3>Sent!</h3><p>Thanks for your question! We'll let you know when we add it to the app.</p>"
+                });
+                setTimeout(function(){ $.mobile.loading( "hide" ); }, 5000);                
+            },
+            error: function(){
+                $.mobile.loading( "show", {
+                            text: "",
+                            textVisible: true,
+                            textonly: false,
+                            theme: "b",
+                            html: "<h3>Error!</h3><p>There was a problem sending your question. Please try again later...</p>"
+                        });
+                setTimeout(function(){ $.mobile.loading( "hide" ); }, 5000);
+            }
         });
-        setTimeout(function(){ $.mobile.loading( "hide" ); }, 5000);
     });
 });
 
