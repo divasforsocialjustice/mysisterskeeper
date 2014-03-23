@@ -39,7 +39,7 @@ if(empty($_POST['name'])){
 
 /*}*/
 
-
+php header('Access-Control-Allow-Origin: *');
 echo json_encode($response_array);
 
 ?>
