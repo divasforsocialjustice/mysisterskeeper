@@ -22,12 +22,14 @@
 
 	<div data-role="content">
 		<div>Don't see a question in the App? Submit it here and we'll work on getting it answered.</div>
+        <form id="formAskQ">
         <table>
-            <tr><td>Your name</td><td><input type="text"></td></tr>
-            <tr><td>Your e-mail</td><td><input type="text"></td></tr>
-            <tr><td>Your Question</td><td><textarea></textarea></td></tr>
+            <tr><td>Your name</td><td><input id="sendQuestion_Name" type="text"></td></tr>
+            <tr><td>Your e-mail</td><td><input id="sendQuestion_Email" type="text"></td></tr>
+            <tr><td>Your Question</td><td><textarea id="sendQuestion_Question"></textarea></td></tr>
             <tr><td></td><td align="right"><button class="ui-btn ui-btn-inline" id="sendQuestion">Send Question</button></td></tr>            
         </table>
+        </form>
         <div data-role="popup" id="sendQuestionResult" data-arrow="t,r" data-position-to="#sendQuestion">
 <p><h3>Sent!</h3><p>Thanks for your question! We'll let you know when we add it to the app.</p>
 </div>

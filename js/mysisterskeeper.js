@@ -12,7 +12,7 @@ $(document).on("pagecreate", "#askq",  function(event){
         $.ajax({
             type: "POST",
             url: "http://imaging.murraycox.com/ajax/sendquestion.php",
-            data: $("#myForm").serialize(),
+            data: $("#formAskQ").serialize(),
             dataType: "json",
 
             success: function(data){
