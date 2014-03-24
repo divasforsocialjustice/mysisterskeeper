@@ -36,7 +36,7 @@ Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this A
         
     <access origin="http://murraycox.com" subdomains="true" />
 
-    <access origin="http://divasforsocialjustice.com" subdomains="true" />        
+    <access origin="http://divasforsocialjustice.org" subdomains="true" />        
         
     <icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
     <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
