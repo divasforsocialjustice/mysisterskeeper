@@ -26,7 +26,7 @@ Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this A
        
     <!-- To fix an issue in iOS where YouTube video doesn't play audio if the Device mute button is on -->
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
-    <!--<preference name="OpenAllWhitelistURLsInWebView" value="true" />-->Disable this so the About link to divasforsocialjustice opens in a browser window
+    <preference name="OpenAllWhitelistURLsInWebView" value="false" /><!-- Disable this so the About link to divasforsocialjustice opens in a browser window -->
     
     <access origin="http://youtube.com" subdomains="true" />
     <access origin="https://youtube.com" subdomains="true" />
