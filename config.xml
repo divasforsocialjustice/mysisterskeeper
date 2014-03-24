@@ -21,6 +21,8 @@ The My Sister's Keeper App is made possible by DIVAS for Social Justice. DIVAS (
         DIVAS for Social Justice 
     </author>
 
+    <preference name="phonegap-version" value="3.3.0" />
+    
     <gap:platform name="ios" />
     <gap:platform name="android" />
     
