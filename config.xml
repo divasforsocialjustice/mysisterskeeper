@@ -10,9 +10,11 @@
     <name>My Sister's Keeper</name>
 
     <description>
-The My Sister’s Keeper Mobile App provides a platform for a global community of women and girls of color to receive loving affirmations about the questions young girls of color ask themselves growing up. Not everyone has a positive maternal confidant to help answer their questions and DIVAS helps fill that void with this free mobile app that lets a young girl ask a question about body image, relationships or just know someone loves them.
-        
-Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this App and helped to edit, design and program the Mobile App.
+Welcome to the My Sister's Keeper App! This app provides a platform for a global community of girls to receive loving affirmations and answers about the questions they ask themselves growing up. 
+
+Not everyone has a positive maternal confidant to guide them and this app will help provide you with a few virtual BFF's (Best Friend Forever) which will help you recognize women in your life who want to be there for you. 
+
+The My Sister's Keeper App is made possible by DIVAS for Social Justice. DIVAS (Digital Interactive Visual Arts Sciences) for Social Justice encourages and trains girls living in underserved communities in New York City to use technology for social change.
     </description>
 
     <author href="https://www.divasforsocialjustice.org" email="mysisterskeeper@divasforsocialjustice.com">
@@ -36,7 +38,7 @@ Young girls in Bedford Stuyvesant, Brooklyn, filmed all of the content in this A
         
     <access origin="http://murraycox.com" subdomains="true" />
 
-    <!-- <access origin="http://divasforsocialjustice.org" subdomains="true" /> -->
+    <access origin="http://divasforsocialjustice.org" subdomains="true"  />
         
     <icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
     <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
