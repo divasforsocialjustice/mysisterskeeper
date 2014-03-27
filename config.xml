@@ -28,10 +28,14 @@ The My Sister's Keeper App is made possible by DIVAS for Social Justice. DIVAS (
     
     <preference name="target-device" value="handset" />
        
-    <!-- To fix an issue in iOS where YouTube video doesn't play audio if the Device mute button is on -->
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
-    <preference name="OpenAllWhitelistURLsInWebView" value="false" /><!-- Disable this so the About link to divasforsocialjustice opens in a browser window -->
+    <preference name="OpenAllWhitelistURLsInWebView" value="true" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+        
+    <!-- Enabling access to all external resources, to see if it fixes Android issues with YouTube videos -->
+    <access origin="*" />
     
+    <!--
     <access origin="http://youtube.com" subdomains="true" />
     <access origin="https://youtube.com" subdomains="true" />
 
@@ -41,6 +45,7 @@ The My Sister's Keeper App is made possible by DIVAS for Social Justice. DIVAS (
     <access origin="http://murraycox.com" subdomains="true" />
 
     <access origin="http://divasforsocialjustice.org" subdomains="true"  />
+    -->
         
     <icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
     <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
